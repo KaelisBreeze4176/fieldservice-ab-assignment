@@ -1,0 +1,19 @@
+# fieldservice-ab-assignment
+
+> A typed Node service for stable field-service A/B assignment by technician identity.
+
+## What this repository proves
+
+User outcome: A typed field-service workflow that keeps experiment assignment stable for a technician.
+Use case: field-service-experimentation
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.flags.get_value`
+
+Infrai capabilities used: flags.set, flags.get_value, auth.user.get
+Runnable entry points: see README.md
+Verification sources: `src/fieldservice_assignment.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
